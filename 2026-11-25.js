@@ -26,3 +26,19 @@ console.log(fizzBuzz(4));
 console.log(fizzBuzz(8));
 console.log(fizzBuzz(20));
 console.log(fizzBuzz(50));
+
+/*
+Or Javascript 'way'
+
+const fizzBuzz = (n) => 
+  Array.from({ length: n })
+    .map((_, index) => {
+      const num = index + 1;
+      if (num % 15 === 0) return "FizzBuzz";
+      if (num % 3 === 0) return "Fizz";
+      if (num % 5 === 0) return "Buzz";
+      return num.toString();
+    });
+
+console.log(fizzBuzz(5)); 
+*/
