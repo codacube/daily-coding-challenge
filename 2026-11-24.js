@@ -1,5 +1,5 @@
 function isValidMessage(message, validator) {
-  // Should also check for string types
+  // Sanity checks
   if (!message || typeof message !== "string") return false;
   if (!validator || typeof validator !== "string") return false;
 
